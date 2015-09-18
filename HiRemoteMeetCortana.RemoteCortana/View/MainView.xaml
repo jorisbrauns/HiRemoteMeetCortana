@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="HiRemoteMeetCortana.RemoteCortana.View.MainView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HiRemoteMeetCortana.RemoteCortana.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:HiRemoteMeetCortana.RemoteCortana.ViewModel"
+    DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=MainViewModel}"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+        <StackPanel>
+            <TextBlock FontSize="24" Text="Hi Remote Meet Cortana" ></TextBlock>
+            
+            <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                <ToggleButton IsChecked="{Binding DisableAlarm, Mode=TwoWay}" Content="Disable Alarm"  Margin="0,0,10,0"></ToggleButton>
+                <ToggleButton IsChecked="{Binding LightUpDaily, Mode=TwoWay}"  Content="Light up daily" />
+            </StackPanel>
+
+            <TimePicker Header="Wakup time" Time="{Binding TimeToWake, Mode=TwoWay}" Margin="0,10,0,20"></TimePicker>
+   
+            <StackPanel Orientation="Horizontal" >
+                <Button Command="{Binding SaveCommand}"  Content="{Binding SaveCommand.Display}" />
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>

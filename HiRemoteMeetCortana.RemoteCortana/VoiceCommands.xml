@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="VoiceCommandSet_en-us">
+    <CommandPrefix> Remote, </CommandPrefix>
+    <Example> Turn my wakup light alarm on </Example>
+
+    <!--<Command Name="showTripToDestination">
+      <Example> Show trip to London </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> show [my] trip to {destination} </ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> show [my] {builtin:AppName} trip to {destination} </ListenFor>
+      <Feedback> Showing trip to {destination} </Feedback>
+      <Navigate Target="foo"/>
+    </Command>-->
+    
+    <Command Name="turnOffLight">
+      <Example> Turn my wakup light alarm off </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> turn [my] wakup light alarm off </ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> turn [my] {builtin:AppName} wakup light alarm off </ListenFor>
+      <Feedback> Turning off wakup alarm light </Feedback>
+      <VoiceCommandService Target="RuleVoiceCommandService"/>
+    </Command>
+
+    <Command Name="turnOnLight">
+      <Example> Turn my wakup alarm light on </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> turn [my] wakup light alarm on </ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> turn [my] {builtin:AppName} wakup light alarm on </ListenFor>
+      <Feedback> Turning on wakup light alarm </Feedback>
+      <VoiceCommandService Target="RuleVoiceCommandService"/>
+    </Command>
+
+    <!--
+    <PhraseList Label="rule">
+      <Item>kitchen</Item>
+    </PhraseList>
+    -->
+  </CommandSet>
+
+</VoiceCommands>
