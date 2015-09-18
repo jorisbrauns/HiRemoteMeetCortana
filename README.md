@@ -1,3 +1,8 @@
+Important!
+
+This code is part of a full tutorial which can be found here:
+https://www.hackster.io/team-passionate-contributers/hi-remote-meet-cortana
+
 # HiRemoteMeetCortana
 Stop dreaming!
 No, really... it’s about time to wake up now. So, why is it so hard?
@@ -8,6 +13,7 @@ It’s so easy: tell Cortana at what time you want to wake up and she will gentl
 
 Easy to implement explained top to bottom. All code contains comment to get a good understanding how things are working.
 If something is not clear, you can find more information on my blog: http://blog.jorisbrauns.be
+
 
 #HiRemoteMeetCortana.RemoteCortana
 Is the remote controller to turn on the light bulb alarm by using Cortana our the user interface. Build as a Universal Windows Platform application for Windows 10 Family. Cortana is an intelligent personal assistant created by Microsoft which is a voice control.
