@@ -103,6 +103,7 @@
     <Compile Include="Common\INavigationService.cs" />
     <Compile Include="Common\NavigationService.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Converter\InverseBoolConverter.cs" />
     <Compile Include="models\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
@@ -135,6 +136,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\bg.png" />
     <Content Include="Assets\splash-sdk.scale-100.png" />
     <Content Include="VoiceCommands.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

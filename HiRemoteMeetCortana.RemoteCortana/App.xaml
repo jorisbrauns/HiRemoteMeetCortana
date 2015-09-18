@@ -17,7 +17,6 @@
     xmlns:local="using:HiRemoteMeetCortana.RemoteCortana"
     xmlns:vm="using:HiRemoteMeetCortana.RemoteCortana.ViewModel"
     RequestedTheme="Dark">
-
     <Application.Resources>
         <!-- Application-specific resources -->
         <ResourceDictionary>

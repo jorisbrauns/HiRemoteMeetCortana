@@ -6,20 +6,25 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="using:HiRemoteMeetCortana.RemoteCortana.ViewModel"
+    xmlns:cv="using:HiRemoteMeetCortana.RemoteCortana.Converter"
+    Style="{ThemeResource Layout}"
+    RequestedTheme="Light" 
     DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=MainViewModel}"
     mc:Ignorable="d">
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Page.Resources>
+        <cv:InverseBoolConverter x:Key="InverseBoolConverter" />
+    </Page.Resources>
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
 
         <StackPanel>
-            <TextBlock FontSize="24" Text="Hi Remote Meet Cortana" ></TextBlock>
+            <TextBlock FontSize="24" Text="Hi remote, meet Cortana" ></TextBlock>
             
             <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
-                <ToggleButton IsChecked="{Binding DisableAlarm, Mode=TwoWay}" Content="Disable Alarm"  Margin="0,0,10,0"></ToggleButton>
-                <ToggleButton IsChecked="{Binding LightUpDaily, Mode=TwoWay}"  Content="Light up daily" />
+                <ToggleButton IsChecked="{Binding DisableAlarm, Converter={StaticResource InverseBoolConverter}, Mode=TwoWay}" Content="Disable Alarm"  Margin="0,0,10,0"></ToggleButton>
+                <ToggleButton IsChecked="{Binding LightUpDaily, Mode=TwoWay}" Content="Light up daily" />
             </StackPanel>
 
-            <TimePicker Header="Wakup time" Time="{Binding TimeToWake, Mode=TwoWay}" Margin="0,10,0,20"></TimePicker>
+            <TimePicker Header="Wake-up time" Time="{Binding TimeToWake, Mode=TwoWay}" Margin="0,10,0,20"></TimePicker>
    
             <StackPanel Orientation="Horizontal" >
                 <Button Command="{Binding SaveCommand}"  Content="{Binding SaveCommand.Display}" />

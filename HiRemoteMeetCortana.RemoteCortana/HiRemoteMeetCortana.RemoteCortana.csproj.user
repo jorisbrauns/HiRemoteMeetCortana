@@ -13,7 +13,7 @@
     <RemoteDebugEnabled>false</RemoteDebugEnabled>
     <RemoteDebugMachine>192.168.1.102</RemoteDebugMachine>
     <DeviceId>8BDF218D-FDBB-4A97-90F9-3AA33B559A92</DeviceId>
-    <UseEmulator>false</UseEmulator>
+    <UseEmulator>true</UseEmulator>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DeviceId>8BDF218D-FDBB-4A97-90F9-3AA33B559A92</DeviceId>

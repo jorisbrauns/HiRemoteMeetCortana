@@ -14,7 +14,15 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:SDKTemplate">
-
+    
+    <Style x:Key="Layout" TargetType="Page">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Assets/bg.png"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
     <Style x:Key="SymbolButton" TargetType="ToggleButton">
         <Setter Property="Background" Value="{ThemeResource ToggleButtonBackgroundThemeBrush}"/>
         <Setter Property="Foreground" Value="{ThemeResource ToggleButtonForegroundThemeBrush}"/>

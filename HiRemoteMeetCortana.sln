@@ -97,4 +97,22 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://sendito.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = HiRemoteMeetCortana.RaspberryPi\\HiRemoteMeetCortana.RaspberryPi.csproj
+		SccProjectName1 = HiRemoteMeetCortana.RaspberryPi
+		SccLocalPath1 = HiRemoteMeetCortana.RaspberryPi
+		SccProjectUniqueName2 = HiRemoteMeetCortana.WebService\\HiRemoteMeetCortana.WebService.csproj
+		SccProjectName2 = HiRemoteMeetCortana.WebService
+		SccLocalPath2 = HiRemoteMeetCortana.WebService
+		SccProjectUniqueName3 = HiRemoteMeetCortana.VoiceCommandService\\HiRemoteMeetCortana.VoiceCommandService.csproj
+		SccProjectName3 = HiRemoteMeetCortana.VoiceCommandService
+		SccLocalPath3 = HiRemoteMeetCortana.VoiceCommandService
+		SccProjectUniqueName4 = HiRemoteMeetCortana.RemoteCortana\\HiRemoteMeetCortana.RemoteCortana.csproj
+		SccProjectName4 = HiRemoteMeetCortana.RemoteCortana
+		SccLocalPath4 = HiRemoteMeetCortana.RemoteCortana
+	EndGlobalSection
 EndGlobal

@@ -63,10 +63,11 @@ namespace HiRemoteMeetCortana.RemoteCortana.ViewModel
         private async void SaveCommandAction()
         {
             DateTime timetowake = new DateTime(2012, 01, 01) + TimeToWake;
+            
             await _wakupLightService.Save(new Settings
             {
                 Daily =  LightUpDaily,
-                IsOn = !DisableAlarm,
+                IsOn = DisableAlarm,
                 TimeToWake = timetowake
             });
 
