@@ -3,6 +3,9 @@ Important!
 This code is part of a full tutorial which can be found here:
 https://www.hackster.io/team-passionate-contributers/hi-remote-meet-cortana
 
+All code contains comment to get a good understanding how things are working.
+If something is not clear, you can find more information on my blog: http://blog.jorisbrauns.be
+
 # HiRemoteMeetCortana
 Stop dreaming!
 No, really... it’s about time to wake up now. So, why is it so hard?
@@ -11,8 +14,7 @@ Get up and maximize your energy with our Cortana (by Windows 10) and Raspberry P
 
 It’s so easy: tell Cortana at what time you want to wake up and she will gently light up your room with whatever bulb you want.
 
-Easy to implement explained top to bottom. All code contains comment to get a good understanding how things are working.
-If something is not clear, you can find more information on my blog: http://blog.jorisbrauns.be
+Easy to implement explained top to bottom. 
 
 
 #HiRemoteMeetCortana.RemoteCortana
