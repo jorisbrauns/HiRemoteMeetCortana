@@ -6,7 +6,7 @@ https://www.hackster.io/team-passionate-contributers/hi-remote-meet-cortana
 All code contains comment to get a good understanding how things are working.
 If something is not clear, you can find more information on my blog: http://blog.jorisbrauns.be
 
-# HiRemoteMeetCortana
+# Hi remote, Meet Cortana
 Stop dreaming!
 No, really... it’s about time to wake up now. So, why is it so hard?
 
